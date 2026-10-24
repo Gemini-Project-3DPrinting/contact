@@ -21,6 +21,13 @@
     strong { display: block; font-size: 17px; font-weight: 600; }
     small { display: block; margin-top: 5px; font-size: 12px; color: #6a626f; overflow-wrap: anywhere; }
     .arrow { margin-left: auto; color: #8500d5; font-size: 23px; }
+    .contact { max-width: 380px; margin: 0 auto 14px; padding: 22px; border: 1px solid #e5dcec; border-radius: 18px; background: #fbf7ff; }
+    .contact h1 { margin: 0; font-size: 23px; font-weight: 600; }
+    .phone { margin: 8px 0 20px; font-size: 15px; color: #6a626f; }
+    .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .actions a { justify-content: center; min-height: 48px; padding: 12px 8px; gap: 0; font-size: 13px; font-weight: 600; text-align: center; border-radius: 12px; }
+    .actions .save { color: #fff; background: #8500d5; border-color: #8500d5; }
+    .actions .save:hover { background: #6d00af; }
     @media (max-width: 380px) { body { padding: 32px 18px; } .logo { margin-bottom: 30px; } a { padding: 16px; gap: 12px; } }
     @media (prefers-reduced-motion: reduce) { a { transition: none; } a:hover { transform: none; } }
   </style>
@@ -28,6 +35,14 @@
 <body>
   <main aria-label="Gemini Project">
     <div class="logo"><img src="assets/logo.jpg" alt="Gemini Project" width="2048" height="2047" fetchpriority="high"></div>
+    <section class="contact" aria-labelledby="contact-name">
+      <h1 id="contact-name">Александр</h1>
+      <p class="phone">+7 952 325-72-29</p>
+      <div class="actions">
+        <a href="tel:+79523257229">Позвонить</a>
+        <a class="save" href="alexander.vcf" download="Александр 3D-печать.vcf">Сохранить контакт</a>
+      </div>
+    </section>
     <nav aria-label="Социальные сети">
       <a href="https://www.instagram.com/gemini_3dprint/">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
